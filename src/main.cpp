@@ -4,10 +4,6 @@
 #include <ArduinoJson.h>
 #include "env.h"
 
-const char* ssid = WIFI_SSID;
-const char* password = WIFI_PASS;
-const char* apiKey = API_KEY; 
-
 const char* host = "ecse-three-led-api.onrender.com";
 
 
@@ -55,7 +51,7 @@ void loop() {
         Serial.print("HTTP Response code: ");
         Serial.println(httpResponseCode);
 
-        Serial.print("This Response is from server: ");
+        Serial.print("Response from server: ");
         http_response = http.getString();
         Serial.println(http_response);
       }
@@ -87,7 +83,7 @@ void loop() {
       digitalWrite(ledPin1, light_switch_1);
       digitalWrite(ledPin2,light_switch_2);
       digitalWrite(ledPin3, light_switch_3);
-      Serial.println("LED states was updated");
+      Serial.println("LED states updated");
       
   }
   else {
