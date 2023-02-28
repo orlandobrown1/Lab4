@@ -4,6 +4,10 @@
 #include <ArduinoJson.h>
 #include "env.h"
 
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASS;
+const char* apiKey = API_KEY; 
+
 const char* host = "ecse-three-led-api.onrender.com";
 
 
