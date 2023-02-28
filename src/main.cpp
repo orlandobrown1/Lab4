@@ -51,7 +51,7 @@ void loop() {
         Serial.print("HTTP Response code: ");
         Serial.println(httpResponseCode);
 
-        Serial.print("Response from server: ");
+        Serial.print("This Response is from server: ");
         http_response = http.getString();
         Serial.println(http_response);
       }
