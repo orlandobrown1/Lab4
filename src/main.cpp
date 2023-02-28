@@ -83,7 +83,7 @@ void loop() {
       digitalWrite(ledPin1, light_switch_1);
       digitalWrite(ledPin2,light_switch_2);
       digitalWrite(ledPin3, light_switch_3);
-      Serial.println("LED states updated");
+      Serial.println("LED states was updated");
       
   }
   else {
